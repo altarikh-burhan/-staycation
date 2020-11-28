@@ -102,7 +102,7 @@ module.exports = {
 
 	bookingPage: async (req, res) => {
 		const {
-			 	itemId,
+			 	idItem,
 		      duration,
 		      bookingStartDate,
 		      bookingEndDate,
@@ -117,7 +117,7 @@ module.exports = {
 			return res.status(404).json({ message: "Image Not Found"});
 		}
 
-		if( itemId === undefined ||
+		if( idItem === undefined ||
       	duration === undefined ||
       	bookingStartDate === undefined ||
       	bookingEndDate === undefined ||
